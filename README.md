@@ -12,7 +12,7 @@ https://github.com/iabhisheksaha/bitsom_ba_25071285-fleximart-data-architecture
 
 ## Project Overview
 
-This project implements an end-to-end data architecture solution for FlexiMart, an e-commerce platform. It covers the complete data lifecycle, starting from raw CSV ingestion and data quality handling, to relational database design, NoSQL analysis using MongoDB, and dimensional modeling for analytical reporting using a data warehouse.
+This project implements a complete data architecture for FlexiMart, including an ETL pipeline into MySQL, analytical business queries, MongoDB-based NoSQL modeling, and a star-schema data warehouse with OLAP analytics.
 
 The solution demonstrates ETL implementation, schema documentation, business-driven SQL analytics, NoSQL suitability analysis, and OLAP-style reporting using a star schema.
 
