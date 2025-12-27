@@ -1,7 +1,17 @@
-Customers read: 26
-Customers dropped (missing email): 5
-Products read: 20
-Products dropped (missing price): 3
-Sales read: 41
-Sales dropped (missing or invalid references): 16
+Customers records read: 25
+Duplicate customer records removed: 1
+Customers dropped due to missing email: 5
+Customers loaded successfully: 20
+
+Products records read: 20
+Products dropped due to missing price: 3
+Products loaded successfully: 17
+
+Sales records read: 40
+Duplicate sales transactions removed: 1
+Sales dropped due to missing customer_id: 3
+Sales dropped due to missing product_id: 2
+Sales dropped due to invalid references: 9
+Total sales dropped: 16
 Sales loaded successfully: 25
+Order items loaded successfully: 25
