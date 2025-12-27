@@ -82,7 +82,19 @@ First Normal Form (1NF) is satisfied because all tables contain atomic values wi
 
 Second Normal Form (2NF) is achieved as all non-key attributes are fully functionally dependent on the entire primary key. For example, in the order_items table, attributes such as quantity, unit_price, and subtotal depend on the order_item_id and not partially on order_id or product_id alone.
 
-Third Normal Form (3NF) is satisfied because there are no transitive dependencies. Non-key attributes depend only on the primary key of their respective tables. Customer details are stored only in the customers table, product details only in the products table, and transactional data is separated into orders and order_items.
+The database schema is designed in Third Normal Form (3NF). Each table has a primary key, and all non-key attributes depend solely on that primary key.
+
+Functional dependencies include:
+
+customer_id → first_name, last_name, email, phone, city, registration_date
+
+product_id → product_name, category, price, stock_quantity
+
+order_id → customer_id, order_date, total_amount, status
+
+order_item_id → order_id, product_id, quantity, unit_price, subtotal
+
+There are no transitive dependencies, as descriptive attributes are not dependent on other non-key attributes. This design prevents update anomalies (e.g., updating customer email in one place), insert anomalies (e.g., inserting products without orders), and delete anomalies (e.g., deleting an order does not remove customer data).
 
 This design avoids update anomalies by ensuring that changes to customer or product information occur in a single place. Insert anomalies are prevented because valid foreign key references are enforced before inserting transactional records. Delete anomalies are avoided since removing an order does not delete customer or product master data.
 
