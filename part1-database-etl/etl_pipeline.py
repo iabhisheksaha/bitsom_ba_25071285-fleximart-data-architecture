@@ -16,16 +16,20 @@ import pandas as pd
 import mysql.connector
 import re
 from datetime import datetime
+import getpass
 
 # --------------------------------------------------
 # Database Configuration (update password if needed)
 # --------------------------------------------------
+mysql_password = getpass.getpass("Enter MySQL root password: ")
+
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "password",
+    "password": mysql_password,
     "database": "fleximart"
 }
+
 
 # --------------------------------------------------
 # Utility Functions
