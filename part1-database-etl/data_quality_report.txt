@@ -1,0 +1,7 @@
+Customers read: 26
+Customers dropped (missing email): 5
+Products read: 20
+Products dropped (missing price): 3
+Sales read: 41
+Sales dropped (missing or invalid references): 16
+Sales loaded successfully: 25
