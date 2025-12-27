@@ -22,4 +22,4 @@ Overall, MongoDB provides agility, scalability, and a data model that closely ma
 
 ## Section C: Trade-offs of Using MongoDB
 
-While MongoDB offers flexibility, it has disadvantages compared to MySQL. First, complex multi-document transactions are more difficult and less performant, making financial reporting harder. Second, the lack of enforced foreign key constraints can lead to data inconsistency if application logic is not carefully implemented.
+While MongoDB offers schema flexibility, it has trade-offs compared to MySQL. Complex multi-document transactions are harder to manage and less efficient, making financial consistency more challenging. Additionally, the absence of enforced foreign key constraints increases the risk of data inconsistency if application-level validation is weak.
